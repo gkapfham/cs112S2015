@@ -1,5 +1,5 @@
-%!TEX root=cs112S2014-lab2.tex
-% mainfile: cs112S2014-lab2.tex 
+%!TEX root=cs112S2015-lab2.tex
+% mainfile: cs112S2015-lab2.tex
 
 \input{labspre.tex}
 
@@ -7,26 +7,19 @@
 
 \begin{document}
 \MYTITLE{Laboratory Assignment Two: Using Vim as an Integrated Development Environment}
-\MYHEADERS{Laboratory Assignment Two}{Due: February 4, 2014}
+\MYHEADERS{Laboratory Assignment Two}{Due: January 29, 2015}
 
 \section*{Introduction}
 
-Practicing software developers normally use an integrated development environment (IDE) to manage various tasks associated with
-the design, implementation, and testing of data structures and algorithms. In this course, we will use Vim as an IDE.  In this
-laboratory assignment, you will work with your team members to learn about the basic features associated with Vim and then
-individually prepare your own tutorial that explains how to use basic Vim commands, Vim runtime configuration files, and plugins
-to support the navigation and manipulation of Java source code. 
+Practicing software developers normally use an integrated development environment (IDE) to manage various tasks
+associated with the design, implementation, and testing of data structures and algorithms. In this course, we will use
+Vim as an IDE.  In this laboratory assignment, you will work to learn about the basic features associated with Vim and
+then individually prepare your own tutorial that explains how to use basic Vim commands and plugins to support the
+navigation and manipulation of Java source code.  The goal for this assignment is to ensure that you can effectively use
+Vim, thus enabling you to focus more on the course concepts and less on the use of the IDE.
 
 \section*{Using Runtime Configuration Files}
 
-It is very easy to configure Vim by writing VimScript in your {\tt .vimrc} and {\tt .gvimrc} files.  To complete this phase of the
-assignment you should run the {\tt git pull} command inside of your {\tt cs112S2014-share} Git repository.  Now, change into the
-{\tt labs/lab2/src/dotfiles/} directory.  What files did you find in this location? Now, you should copy these files from the git
-repository into the root of your home directory. At this point, you should run the GVim command so that you can see the source
-code of one of the Java programs that we used during our class sessions. Do you see that the color scheme is different? If you
-would like, you can customize the color scheme by using the ``Edit'' and ``Color Scheme'' menus.  Finally, you should also use
-GVim to study the VimScript in the {\tt .vimrc} and {\tt .gvimrc} files.  Make sure that you and your team members have a basic
-understanding of these configuration files. What new features does GVim now have?
 
 % After saving this file to the root of your home directory, you should decompress it using the {\tt tar} command in your terminal
 % window.  Now, please restart Vim.  What other features have now been added to Vim?  To learn more about how I have configured Vim
@@ -40,7 +33,7 @@ like to use the Vim text editor, as explained at \url{http://usevim.com/2012/10/
 some of the reasons behind using Vim, you can return to the GVim window that should still have the source code of a Java program
 in it. Using your own program and ultimately writing your own tutorial, you should work with your team members to identify,
 learn, and document some of the basic features that are offered by Vim.  For instance, make sure that you know how to perform the
-following actions.  
+following actions.
 
 \begin{enumerate}
 
@@ -60,7 +53,7 @@ following actions.
 
 	\item Undo the result of a previous command
 
-	\item Search for and replace specific words in a file 
+	\item Search for and replace specific words in a file
 
 	\item Any additional features that you deem to be useful
 
@@ -69,7 +62,7 @@ following actions.
 Since we will be using Vim throughout the semester, please make sure that you can easily invoke all of the editor's most
 important commands.  You should take notes and screenshots to demonstrate that you understand how to use basic
 Vim commands. As you explore how to use Vim, you should prepare content for a tutorial explaining all of the
-aforementioned tasks. 
+aforementioned tasks.
 
 \section*{Using Plugins to Extend Vim}
 
@@ -77,7 +70,7 @@ We will use a variety of Vim plugins to ensure that Vim can operate as a full-fl
 complete the laboratory assignments and the final project.  In this phase of the assignment, you are responsible for learning how
 to use all of the plugins in the following list.  To start learning more about these plugins, load the source code of your {\tt
   .vimrc} file into GVim and search for a line that starts with the command {\tt Bundle}.  For each of the plugins that you
-are required to investigate, you can visit the associated Web site, as listed in the {\tt .vimrc}. 
+are required to investigate, you can visit the associated Web site, as listed in the {\tt .vimrc}.
 
 Next, you should run the {\tt :BundleInstall} command in GVim.  After all of the plugins are correctly installed, your enhanced
 version of Vim should have many new features! To access these features, you should quit GVim and then run the program again to
@@ -86,7 +79,7 @@ outputs, and behavior of the key features offered by each of the following plugi
 
 \begin{enumerate}
 
-  \item Ctrl-P 
+  \item Ctrl-P
   \item Fugitive
   \item MatchIt
   \item NERDTree
@@ -105,12 +98,12 @@ and load files with the NERDTree plugin.
 This assignment invites you to submit one printed version of a tutorial that contains:
 
 \begin{enumerate}
-	
+
   \item A commentary on how Vim uses runtime configuration files
 
   \item A full-featured description of the basic features associated with the Vim text editor
 
-  \item A complete introduction to the use of the Vim aforementioned plugins 
+  \item A complete introduction to the use of the Vim aforementioned plugins
 
 \end{enumerate}
 
