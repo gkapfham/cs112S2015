@@ -31,8 +31,17 @@
   again.  What output do you see on the screen? Now, you can see the output of the build command will indicate where the
   error is located in your program. After you have returned to the error location, go ahead and fix the problem by
   adding back the semi-colon and recompiling your program. If you would like to further experiment with automatically
-  building your Java program, you can type the command ``{:Ant compile}'' directly in GVim. What action does this
+  building your Java program, you can type the command ``{\tt :Ant compile}'' directly in GVim. What action does this
   command perform? How is this approach different than running {\tt ant} in the terminal?
+
+  It is also worth noting that the files and the directories for this assignment are organized in a way that is
+  different from what you have seen in past laboratories or in-class assignments in this class or in your previous
+  introductory computer science class. One difference that you should notice is that the bytecode files (i.e., the files
+    ending with the ``{\tt .class} extension) are stored in a different directory that the source code files (i.e., the
+  files that end with ``{\tt .java}''). What are the advantages and disadvantages of organizing the project in this
+  fashion? Additionally, you should note that the source code for this project is stored in nested directories and the
+  source code file called {\tt Tweet.java} contains the ``{\tt package edu.allegheny.gatortweet;}'' at the top of it.
+  Why do you think that the source code is organized in this fashion? What are the benefits and drawbacks?
 
 \section*{Improving the GatorTweet System}
 
@@ -45,7 +54,8 @@
 
 % \section*{Adding a GatorTweet Class}
 
-Now, you should implement a {\tt GatorTweet} class that performs the following operations in {\tt main}:
+  \noindent
+  Now, you should implement a {\tt GatorTweet} class that performs the following operations in {\tt main}:
 
 \vspace*{-.1in} \begin{enumerate}
     % \itemsep 0in
@@ -53,7 +63,7 @@ Now, you should implement a {\tt GatorTweet} class that performs the following o
 
     \item Constructs an {\tt ArrayList} that will only hold {\tt String}s for the invalid tweet messages.
 
-    \item Uses the {\tt java.util.Scanner} call to read in consecutive lines of text from a file in the {\tt tweets/}
+    \item Uses the {\tt java.util.Scanner} class to read in consecutive lines of text from a file in the {\tt tweets/}
       subdirectory of the {\tt GatorTweet/} directory, called ``Tweets.txt'', that contains potential tweets. (It is
       worth noting that this file can contain both valid and invalid tweets).
 
@@ -79,7 +89,7 @@ Now, you should implement a {\tt GatorTweet} class that performs the following o
   \begin{enumerate} 
     \item A description of the meaning and purpose of the provided {\tt build.xml} file.
     
-    \item A screenshot demonstrating that you can display and use the quickfix list in GVim.
+    \item Screenshots demonstrating that you could correctly run the {\tt build.xml} file.
     
     \item The final version of your {\tt Tweet.java} and {\tt GatorTweet.java} files.
     
@@ -88,7 +98,7 @@ Now, you should implement a {\tt GatorTweet} class that performs the following o
   \end{enumerate}
 
   Along with turning in a printed version of these deliverables, you should ensure that everything is also available in
-  the repository that is named according to the convention {\tt cs112S2014-<your user name>}. Please note that students
+  the repository that is named according to the convention {\tt cs112S2015-<your user name>}. Please note that students
   in the class are responsible for completing and submitting their own version of this assignment.    While it is
   acceptable for members of this class to have high-level conversations, you should not share source code or full
   command lines with your classmates.  Please see the instructor if you have questions about the policies for this
