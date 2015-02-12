@@ -25,8 +25,8 @@ algorithm, students will develop and refine their writing skills as they create 
   directory that you can explore further.  Once again, please make sure that you can find the source code in this new
   directory and you understand why the directories in the assignment are structured the way that they are. Now, you
   should use GVim to study the source code in the {\tt build.xml} file.  As in the past assignment, you can type the
-  command {\tt :make} in your GVim window and it will compile the three Java classes and save the bytecode in the
-  correct subdirectories inside of the {\tt bin/} directory.  Please see the instructor if you cannot get this to work.
+  command {\tt :Ant compile} in GVim and it will compile the three Java classes and save the bytecode in the correct
+  subdirectories inside of the {\tt bin/} directory.  Please see the instructor if you cannot get this to work.
 \end{sloppypar}
 
 \begin{sloppypar}
@@ -40,7 +40,7 @@ will not run correctly unless you have both the {\tt bin/} directory and the {\t
 
 Try to execute the {\tt UseFibonacci} program for different input values from 0 to 50. You should see the output from
 the computation and timing information that is related to the performance of the different algorithms. For example, try
-to execute the following command in your terminal window: {\tt java edu.allegheny.edu.benchmark.UseFibonacci 10 all}.
+to execute the following command in your terminal window: ``{\tt java edu.allegheny.edu.benchmark.UseFibonacci 10 all}''.
 
 \section*{Adding Additional Features}
 
@@ -48,8 +48,8 @@ to execute the following command in your terminal window: {\tt java edu.alleghen
   command-line arguments. What are they? As part of this laboratory assignment, you must extend the {\tt UseFibonacci}
   class and the command-line arguments that it can accept. You should add a third command-line argument that corresponds
   to one of the words {\tt int}, {\tt long}, or {\tt all}. After {\tt UseFibonacci} extracts this new command-line
-  argument, it should use this additional information to run a specific experiment. One valid execution might be: {\tt
-    java edu.allegheny.benchmark.Use\-Fibonacci 10 all long}. This command line would indicate that you should only
+  argument, it should use this additional information to run a specific experiment. One valid execution might be: ``{\tt
+    java edu.allegheny.benchmark.Use\-Fibonacci 10 all long}''. This command line would indicate that you should only
   execute the methods within {\tt RecursiveFibonacci} and {\tt IterativeFibonacci} that operate on variables with the
   {\tt long} data type.  You will need to add conditional logic to {\tt UseFibonacci} in order to correctly
   implement this additional feature. Please see the instructor if you have questions about this task.
@@ -78,19 +78,23 @@ noteworthy trends in your data sets.
 
   This assignment invites you to submit a signed and printed version of the following deliverables: 
 
+    \vspace*{-.1in}
   \begin{enumerate} 
   \itemsep0pt
-  \item Using diagram(s), an explanation of how recursion works in the Java programming language
+  \item Using diagram(s), an explanation of how recursion works in the Java programming language.
 
-  \item A short discussion of the different primitive types that are available in the Java language
+  \item A short discussion of the different primitive types that are available in the Java language.
 
-  \item The final version of the commented source code for your Fibonacci benchmarking framework
+  \item The final version of the commented source code for your Fibonacci benchmarking framework.
 
-  \item A comprehensive written report that fully explains the results of your experimental study
+  \item A comprehensive written report that fully explains the results of your experimental study.
 
-  \item A reflective commentary on the challenges that you faced when conducting the experiments
+  \item A reflective commentary on the challenges that you faced when implementing the benchmarks.
+
+  \item A reflective commentary on the challenges that you faced when conducting the experiments.
    
   \end{enumerate}
+    \vspace*{-.1in}
 
   Along with turning in a printed version of these deliverables, you should ensure that everything is also available in
   the repository that is named according to the convention {\tt cs112S2015-<your user name>}. Please note that students
