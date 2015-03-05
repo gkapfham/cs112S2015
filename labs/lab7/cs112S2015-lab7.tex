@@ -35,7 +35,20 @@ explain why these data values are evident in your data set and the one produced 
 
 \section*{Creating and Using Your Own Experimentation Framework}
 
+You should notice that the course repository contains three additional Java files: {\tt ArrayFind.java}, {\tt
+ArrayMax.java}, and {\tt DisjointSet.java}. The classes all contain new methods that are amenable to an empirical
+determination of their worst-case time complexity. For instance, {\tt ArrayFind.java} contains a method called {\tt
+public static int arrayFind(int[] data, int val)}.  Pick one or two of the methods that are provided by these Java
+classes and implement a simple doubling experiment tool that follows the pattern of {\tt StringExperiment.java}. That
+is, your tool should repeatedly double the size of the input to one of these methods and then observe how the execution
+time changes as the input increases in size. Since the methods provides by these three Java classes take arrays as
+inputs, you will additionally need to implement an array generation method that can produce arrays, of a specific size,
+with randomly produced {\tt int} values.  Please see the course instructor if you have questions about the task of
+implementing your own framework.
 
+  Don't forget that the worst-case time complexity of a method may only become evident when the size of the input is
+  large enough. As such, you may need to carefully pick the starting size of the generated array and the number of
+  trials to ensure that you can make a firm conclusion about time complexity.
 
 \section*{Summary of the Required Deliverables}
 
