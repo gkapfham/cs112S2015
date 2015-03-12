@@ -1,5 +1,5 @@
-%!TEX root=cs112S2015-lab8.tex 
-% mainfile: cs112S2015-lab8.tex 
+%!TEX root=cs112S2015-lab8.tex
+% mainfile: cs112S2015-lab8.tex
 
 \input{labspre.tex}
 
@@ -27,7 +27,7 @@
   Please see the instructor if you have questions about this part of the assignment.
 
 \section*{Implementing an Arithmetic Interpreter}
- 
+
   In this assignment, you will write a Java program that constructs an instance of the {\tt java.util.Stack} class. What
   are the key methods provided by {\tt java.util.Stack}? What are the inputs and outputs of the key methods? What is
   the behavior of these methods? Please make sure that you review your text book and consult the instructor if you do
@@ -43,7 +43,7 @@ Command & Meaning \\ \hline
 + & push a ``+'' onto the stack \\
 s & push an ``s'' onto the stack \\
 d & display contents of the stack \\
-x & stop the stack machine \\ 
+x & stop the stack machine \\
 e & evaluate the top of the stack (see the following commentary) \\
 \end{tabular}
 
@@ -54,17 +54,17 @@ e & evaluate the top of the stack (see the following commentary) \\
 \begin{enumerate}
 
   \item If a ``+'' is on the top of the stack, then the ``+'' is popped off the stack, the following two integers are
-    popped and added, and the result is pushed back on the stack.  
-  
+    popped and added, and the result is pushed back on the stack.
+
   \item If an ``s'' is on top of the stack, then the ``s'' is popped off the stack and the following two elements are
-    swapped on the top of the stack.  
-  
-  \item If an integer is on the top of the stack or the stack is empty, then the stack is left unchanged.  
+    swapped on the top of the stack.
+
+  \item If an integer is on the top of the stack or the stack is empty, then the stack is left unchanged.
 
 \end{enumerate}
 
 The following examples illustrates the impact of the ``e'' command. Note that in this table, the top of the stack is on
-the left and the notation ``$\ldots$'' denotes the rest of the stack's contents. 
+the left and the notation ``$\ldots$'' denotes the rest of the stack's contents.
 
 \begin{tabular}{r | l}
 State of Stack Before ``e'' & State of Stack After ``e'' \\ \hline
@@ -77,7 +77,7 @@ You must implement an interpreter for this arithmetic language. The input to you
 one per line. The interpreter should prompt for commands with
 \texttt{\textgreater{}\textgreater{}\textgreater{}\textgreater{}\textgreater{}} or something else appropriate. You do
 not need to do any error checking.  That is, you can assume that all commands are valid and that the appropriate number
-of arguments are on the stack for evaluation. However, students may implement a sensible exception handling system for
+of arguments are on the stack for evaluation. However, you may implement a sensible exception handling system for
 extra credit.  Finally, you should be aware of the fact that you will have to decide what types of variables are going
 to be pushed onto and popped off of the {\tt java.util.Stack} maintained by the \texttt{StackMachine}; this choice may
 influence the types of casting that the methods will perform.
@@ -90,25 +90,25 @@ instructor if you have any questions.
 
 \section*{Summary of the Required Deliverables}
 
-  This assignment invites you to submit a signed and printed version of the following deliverables: 
+  This assignment invites you to submit a signed and printed version of the following deliverables:
 
-  \begin{enumerate} 
+  \begin{enumerate}
   \itemsep0pt
 
   \item A complete description of a problem that can be solved by using the stack abstract data type
 
   \item The properly commented version of {\tt StackMachine.java} and any other Java files you create
 
-  \item The output from five separate runs of the {\tt StackMachine} program, demonstrating correctness 
+  \item The output from five separate runs of the {\tt StackMachine} program, demonstrating correctness
 
   \item A written report that provides a response to all of the questions posed in this assignment
 
-  \item A reflective commentary on the challenges that you faced when completing this assignment 
-   
+  \item A reflective commentary on the challenges that you faced when completing this assignment
+
   \end{enumerate}
 
   Along with turning in a printed version of these deliverables, you should ensure that everything is also available in
-  the repository that is named according to the convention {\tt cs112S2014-<your user name>}. Please note that students
+  the repository that is named according to the convention {\tt cs112S2015-<your user name>}. Please note that students
   in the class are responsible for completing and submitting their own version of this assignment.    While it is
   acceptable for members of this class to have high-level conversations, you should not share source code or full
   command lines with your classmates.  Deliverables that are nearly identical to the work of others will be taken as
