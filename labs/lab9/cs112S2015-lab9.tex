@@ -15,7 +15,7 @@
   execute next. In this laboratory assignment, you will use a linked-list-based queue, called the {\tt NodeQueue}, to
   run a ``simulator'' that can solve the Josephus problem. Then, you will analyze the source-code of the simulator to
   determine its worst-case time complexity.  Finally, you will extend the solver so that it accepts command-line
-  arguments and use this enhanced version to conduct a comprehensive study of the method's time efficiency.
+  arguments and then use this enhanced version to conduct a comprehensive study of the method's time efficiency.
 
 \section*{Learning About the Queue}
 
@@ -26,7 +26,7 @@
   incorporated into the solution. For instance, you could explain a program that you have previously implemented that
   manipulated a queue to solve a problem.  Alternatively, you can study books, articles, and online sources to
   investigate a well-known problem that can be solved through the use of a queue.  Please see the instructor if you have
-  questions about this part of the assignment.
+  questions about the tasks for this part of the assignment.
 
 \section*{Using Simulation to Solve the Josephus Problem}
 
@@ -38,11 +38,11 @@
 
   It turns out that this game was first recorded by Flavius Josephus, a first century Jewish historian who was a solider
   in a Jewish-Roman war.  It is possible to use a queue to ``simulate'' the process of playing this game and then
-  quickly determine who will win.  \mbox{After typing} the command {\tt git pull} in the {\tt cs112S2014-share}
-  repository, you will see that there is \mbox{now a} {\tt labs/lab8/} directory that contains a {\tt build.xml} file, a
+  quickly determine who will win.  \mbox{After typing} the command {\tt git pull} in the {\tt cs112S2015-share}
+  repository, you will see that there is \mbox{now a} {\tt labs/lab9/} directory that contains a {\tt build.xml} file, a
   {\tt net-datastructures-5-0.jar} Java archive, and {\tt JosephusSolver.java} file in the {\tt
-    src/edu/allegheny/solver/} directory.  You can run this program by typing {\tt ant JosephusSolver} in the terminal
-  or {\tt :Ant JosephusSolver} \mbox{in GVim}.
+    src/edu/allegheny/solver/} directory.  You can run this program by typing ``{\tt ant JosephusSolver}'' in the terminal
+  or ``{\tt :Ant JosephusSolver}'' \mbox{in GVim}.
 
   If you study {\tt JosephusSolver.java} you will notice that it contains a {\tt main} method that creates different
   groups of children and then runs the solver by specifying a group of children and a stopping point for each round.
@@ -61,13 +61,13 @@
   this method?  In addition to stating your chosen complexity, you should clearly justify your choice. Does this
   analysis suggest that this solver is efficient or inefficient?
 
-  Finally, you should conduct an empirical study to evaluate the run-time efficiency of the {\tt JosephusSolver}.  To
-  develop an accurate understanding of the solver's performance, you should pick five different values for {\tt k} and
-  run the solver with ten different groups of children of increasing size. For each value of {\tt k} and size of the
-  group, you should run the solver ten times and calculate the arithmetic mean of the execution times. Make sure that
-  you pick values for {\tt k} and the size of the group that will give an accurate picture of worst-case time
+  Finally, you should conduct a doubling-based empirical study to evaluate the run-time efficiency of the {\tt
+  JosephusSolver}.  To develop an accurate understanding of the solver's performance, you should pick different values
+  for {\tt k} and run the solver with different groups of children of increasing size. For each value of {\tt k} and
+  size of the group, you should run the solver ten times and calculate the arithmetic mean of the execution times. Make
+  sure that you pick values for {\tt k} and the size of the group that will give an accurate picture of worst-case time
   efficiency. Next, you should create a table of data or a graph that summarizes your results. Does the data from your
-  experimental evaluation confirm the worst-case time complexity that your derived? Why or why not?
+  experimental evaluation confirm the worst-case time complexity that you derived? Why or why not?
 
 \section*{Summary of the Required Deliverables}
 
@@ -93,7 +93,7 @@
   \end{enumerate}
 
   Along with turning in a printed version of these deliverables, you should ensure that everything is also available in
-  the repository that is named according to the convention {\tt cs112S2014-<your user name>}. Please note that students
+  the repository that is named according to the convention {\tt cs112S2015-<your user name>}. Please note that students
   in the class are responsible for completing and submitting their own version of this assignment.    While it is
   acceptable for members of this class to have high-level conversations, you should not share source code or full
   command lines with your classmates.  Deliverables that are nearly identical to the work of others will be taken as
