@@ -10,11 +10,28 @@
 
 \section*{Introduction}
 
+The Java Collections Framework provides an implementation of a wide variety of data containers, such as the {\tt
+ArrayList}, {\tt LinkedList}, and the {\tt Vector}. Each of these different containers are implemented in a different
+way and thus exhibit different trade-offs in their performance. For instance, the {\tt ArrayList} is ``backed'' by an
+array while the {\tt LinkedList} uses nodes that are connected together by references. How do you think that these
+different implementation choices will influence their performance in different usage scenarios? To get started on this
+assignment, you should review the content in Sections 7.1 through 7.5 of your textbook, with a focus on the content in
+Section 7.5. To learn more about the classes provided by the Java Collections Framework, you should also read the
+JavaDoc documentation of all the relevant classes and find online sites that explain their performance trade-offs. What
+ideas do you have for evaluating the performance of these containers?
 
 \section*{Using the Benchmarking Framework}
 
+To start this laboratory assignment, you should return to the {\tt cs112S2015-share} Git repository and type the ``{\tt
+git pull}'' command in the terminal window.  Now, you should have a {\tt lab10/} directory that you can explore further.
+Once again, please make sure that you can find the source code in this new directory and you understand why the
+directories in the assignment are structured the way that they are. Next, you should use GVim to study the source code
+in the {\tt build.xml} file.  As in the past assignments, when editing a Java program you can type ``{\tt
+ant compile}'' in your terminal and it will compile all of the Java classes and save the bytecode in the correct
+subdirectories inside of the {\tt bin/} directory.  Please see the instructor if you cannot get this to work.
 
-\section*{Adding New Benchmarks}
+
+\section*{Adding New Performance Evaluation Benchmarks}
 
 
 \section*{Evaluating the Efficiency of Java Collections}
