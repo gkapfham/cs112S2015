@@ -55,29 +55,40 @@ in this laboratory assignment (e.g., the {\tt ArrayList}, {\tt LinkedList}, and 
 this entire process again so that your final benchmarking framework contains three separate benchmarks. Please see the
 course instructor if you have questions about this process.
 
-\section*{Evaluating the Efficiency of Java Collections}
+\section*{Experimentally Evaluating the Efficiency of Java Collections}
 
+Once you have finished implementing your benchmarks and testing them to ensure that they work correctly, you must plan
+out and conduct a series of experiments to evaluate the efficiency of the Java Collections Framework. One aspect on this
+experimentation effort is identifying all of the parameters of your benchmarks. For instance, the {\tt
+ArrayListBenchmarks} class has two configurable parameters: {\tt initialListSize} and {\tt addToFrontNumber}. After you
+have listed all of the parameters, you should determine what values you will assign to them, perhaps following the
+doubling strategy to effectively pick your values. Now, go ahead and conduct all of your experiments, producing tables
+of data and graphs to highlight your results. Finally, you should write a detailed experiment report that explains the
+purpose of each benchmark, your hypothesis for the results, a justification for each stated hypothesis, the analysis of
+your empirical results, and suggestions for future work.
 
 \section*{Summary of the Required Deliverables}
 
   This assignment invites you to submit a signed and printed version of the following deliverables:
 
   \begin{enumerate}
-  % \itemsep0pt
+  \itemsep0pt
 
-  \item A complete description of a problem that can be solved by using the queue abstract data type
+  \item A complete description of the features provided by the Java Collections Framework.
 
-  \item The properly commented version of {\tt JosephusSolver.java} and any other Java files you create
+  \item The properly commented version of every benchmark that you have implemented.
 
-  \item The output from five separate runs of {\tt JosephusSolver}, demonstrating it's correctness
+  \item The properly commented version of the build system that runs every benchmark.
 
-  \item A written report that provides a response to all of the questions posed in this assignment
+  \item The output from several separate runs of your benchmarks, demonstrating all key features.
 
-  \item A justified statement of the worst-case time complexity for the {\tt Josephus} method
+  \item A written report that provides a response to all of the questions posed in this assignment.
 
-  \item A written analysis of the {\tt JosephusSolver}'s efficiency when it is run in different configurations
+  \item A written report that follows all of the guidelines outlined in the previous section.
 
-  \item A reflective commentary on the challenges that you faced when completing this assignment
+  \item A reflective commentary on the challenges that you faced when implementing the benchmarks.
+
+  \item A reflective commentary on the challenges that you faced when doing the empirical analysis.
 
   \end{enumerate}
 
