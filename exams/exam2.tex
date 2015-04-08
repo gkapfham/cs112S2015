@@ -1,4 +1,4 @@
-\documentclass[12pt]{article}             
+\documentclass[12pt]{article}
 \textwidth = 6.5in
 \textheight = 9.05in
 \topmargin 0.0in
@@ -11,7 +11,7 @@
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}
 
-% define widow protection 
+% define widow protection
 
 \def\widow#1{\vskip #1\vbadness10000\penalty-200\vskip-#1}
 
@@ -34,7 +34,7 @@
     \hbox to \hsize
     {\vrule\hskip 3pt\vrule\hfil\hbox to \tmpdim{\vbox{\hsize=\tmpdim
           \def\par{\leavevmode\endgraf}
-        \obeyspaces \obeylines 
+        \obeyspaces \obeylines
         \let\par=\endgraf
       \bf #1}}}}}
 
@@ -91,8 +91,8 @@ for checking the white board for updates.
         %%       pointer.
 
         %%     \begin{verbatim}
-        %%        1. enqueue(100), 2. dequeue(), 
-        %%        3. enqueue(200), 4. dequeue(), 
+        %%        1. enqueue(100), 2. dequeue(),
+        %%        3. enqueue(200), 4. dequeue(),
         %%        5. enqueue(300), 6. dequeue()
         %%     \end{verbatim}
 
@@ -115,11 +115,11 @@ for checking the white board for updates.
         columns with the output and {\tt Queue} state, respectively, that are created by the following sequence of
         operations, executed in numerically increasing order.  Please place one operation on each row of the table.
 
-            \begin{verbatim} 
-              1. enqueue(55), 2. enqueue(13), 
+            \begin{verbatim}
+              1. enqueue(55), 2. enqueue(13),
               3. dequeue(),   4. enqueue(79),
-              5. dequeue(),   6. front(), 
-              7. dequeue(),   8. dequeue() 
+              5. dequeue(),   6. front(),
+              7. dequeue(),   8. dequeue()
             \end{verbatim}
 
         \end{enumerate}
@@ -152,10 +152,9 @@ for checking the white board for updates.
             %%     functionality of these implementations of the extendable array
             %%     abstract data type (ADT).
 
-          \item ({\bf 4 Points}) Clearly explain the structure of the {\tt Node} and the {\tt DNode}.  Your response
-            should indicate which of these types is used for the singly linked list and which is used for the doubly
-            linked list.  Finally, your answer should include a separate graphical depiction of the {\tt Node} and the
-            {\tt DNode}.
+          \item ({\bf 2 Points}) Clearly explain the structure of the {\tt Node} used to construct a singly linked list
+          and a doubly linked list.  Your answer should include a separate graphical depiction of each of these two types of
+          {\tt Node}s.
 
             %%   \item ({\bf 2 Points}) Two important data structures include the
             %%     linked list (LL) and the doubly linked list (DLL).  Please furnish
@@ -186,6 +185,9 @@ for checking the white board for updates.
             %%     operation.  What is the difference between the XStream serialization
             %%     primitive and the traditional Java serialization primitive?
 
+            \item ({\bf 2 Points}) What are the similarities and differences between a {\tt Queue} and the double-ended
+            queue, which is also known as the {\tt Deque}?
+
         \end{enumerate}
 
         \newpage
@@ -196,17 +198,22 @@ for checking the white board for updates.
 
         \begin{enumerate}
 
-          \item ({\bf 5 Points}) Provide a Java-based pseudo-code implementation (or, just plain pseudo-code
+          \item ({\bf 4 Points}) Provide a Java-based pseudo-code implementation (or, just plain pseudo-code
             implementation) of the {\tt push} and {\tt pop} methods for a simple array-based implementation of the {\tt
             Stack}.  You can assume that the {\tt Stack} is implemented with a fixed-size array called {\tt S} and the
             top of the stack pointer is stored in an {\tt int} variable called {\tt t}. Are these methods efficient?
-            Why?
+            How do you know?
 
-          \item ({\bf 5 Points}) The {\tt Stack} abstract data type provides the methods such as {\tt isEmpty}, {\tt
+          \item ({\bf 4 Points}) The {\tt Stack} abstract data type provides the methods such as {\tt isEmpty}, {\tt
             top}, {\tt push}, and {\tt pop}.  What is the worst-case time complexity for each of these methods?  Why did
             you pick these complexities? If we assume that an $n$ element array called {\tt S} is used to store the
             elements in the {\tt Stack}, what is the worst-case space complexity of the array-based {\tt Stack}
             implementation? Why?
+
+          \item ({\bf 2 Points}) It is possible to use an instance of the {\tt java.util.Stack} to determine whether or
+          not an input string of parentheses or HTML tags is ``matching'' or, in order words, if every opening element
+          has a corresponding closing element. Using natural language, describe how would you use a {\tt Stack}
+          to accomplish this task.
 
             %% \item ({\bf 2 Points}) Using one or more diagrams and a textual
             %%   explanation, please demonstrate how to use a {\tt Stack} to
@@ -217,23 +224,22 @@ for checking the white board for updates.
 
         \newpage
 
-      \item ({\bf 10 Points}) Goodrich and Tamassia claim that the {\tt
-          Stack} ADT is the ``simplest of all data structures.''  Answer the
-        following questions about the {\tt Stack}.
+      \item ({\bf 10 Points}) The authors of your textbook claim that the {\tt Stack} ADT is the ``simplest of all data
+      structures.''  Answer the following questions about the {\tt Stack}.
 
         \begin{enumerate}
 
-          \item ({\bf 5 Points}) Draw a table that has three columns.  Label the first column ``Operation'', the second
+          \item ({\bf 4 Points}) Draw a table that has three columns.  Label the first column ``Operation'', the second
             column ``Output'', and the third column ``Stack Contents''.  Populate the second and third columns with the
             output and {\tt Stack} state, respectively, that are created by running the following sequence of
             operations.  You can place one operation on a single row; make sure that you clearly indicate where the top
             of the stack is in your column that describes the state of the {\tt Stack}.
 
-            \begin{verbatim} 
-              1. push(15),    2. push(32), 
+            \begin{verbatim}
+              1. push(15),    2. push(32),
               3. pop(),       4. push(79),
-              5. pop(),       6. top(), 
-              7. pop(),       8. pop() 
+              5. pop(),       6. top(),
+              7. pop(),       8. pop()
             \end{verbatim}
 
             \vspace*{-.3in}
@@ -257,11 +263,21 @@ for checking the white board for updates.
           %   Your answer should also include a graphical depiction of a {\tt
           %     Stack} for each circumstance in which an exception can be thrown.
 
-          \item ({\bf 3 Points}) You can implement a {\tt Stack} using either an array or a linked list. Two exceptions
+          \item ({\bf 2 Points}) You can implement a {\tt Stack} using either an array or a linked list. Two exceptions
             that may be thrown by the methods of these {\tt Stacks} may include the {\tt EmptyStackException} and
             the {\tt FullStackException}.  For an array-based and a linked list-based stack, what methods can throw
             these two exceptions?  Why do your selected methods throw these exceptions?
-            
+
+            \item ({\bf 2 Points}) The declaration of the {\tt ArrayStack} provided by the authors of your textbook is
+            written in the following fashion:
+
+            \begin{verbatim}
+  public class ArrayStack<E> implements Stack<E>
+            \end{verbatim}
+
+            \vspace*{-.25in} \noindent What is the meaning of the aforementioned notation ``{\tt ArrayStack<E>}''? Why
+            is it advisable to implement the {\tt ArrayStack} in this fashion?
+
             % throw these exceptions.  Your answer should also include a graphical depiction of a {\tt Stack} for each
             % circumstance in which an exception can be thrown.
 
@@ -284,8 +300,8 @@ for checking the white board for updates.
 
             %% \item ({\bf 4 Points}) Completely describe the operation of the {\tt
             %% addFirst}, {\tt addLast}, {\tt removeFirst}, and {\tt removeLast}
-            %% operations for a {\tt DoubleEndedQueue} that is implemented with a 
-            %% doubly linked list.  Your response should explain when (and if!) any 
+            %% operations for a {\tt DoubleEndedQueue} that is implemented with a
+            %% doubly linked list.  Your response should explain when (and if!) any
             %% of these methods could throw an exception.
 
             %%   \item ({\bf 2 Points}) The {\tt java.util.Vector} has a constructor
@@ -338,7 +354,7 @@ for checking the white board for updates.
     %         \vspace*{-.1in}
 
     %         \begin{verbatim}
-    %           public interface Queue<E> 
+    %           public interface Queue<E>
     %         \end{verbatim}
 
     %         \vspace*{-.3in}
@@ -418,7 +434,7 @@ for checking the white board for updates.
 
   \item ({\bf 2 Points}) Declaring an {\tt ArrayList} with the statement ``{\tt ArrayList list = new
       ArrayList();}'' will cause the Java compiler to produce this warning:
-    
+
     \begin{quote}
       \begin{verbatim}
 Note: CreateArrayLists.java uses unchecked or unsafe operations.
@@ -432,7 +448,7 @@ Note: Recompile with -Xlint:unchecked for details.
   \begin{enumerate}
 
     \item Why does the Java compiler produce this warning?
-      
+
     \item How would you revise the aforementioned line of code to remove this error?
 
   \end{enumerate}
