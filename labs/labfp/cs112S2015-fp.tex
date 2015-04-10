@@ -1,12 +1,12 @@
-%!TEX root=cs112S2014-fp.tex 
-% mainfile: cs112S2014-fp.tex 
+%!TEX root=cs112S2015-fp.tex
+% mainfile: cs112S2015-fp.tex
 
 \input{labspre.tex}
 
 \usepackage[compact]{titlesec}
 
 \begin{document} \MYTITLE{Final Project: Automated Analysis of Todo.txt Files}
-\MYHEADERS{Final Project}{Due: May 6, 2014 at 5:00 pm}
+\MYHEADERS{Final Project}{Due: May 6, 2015 at 5:00 pm}
 
 \section*{Introduction}
 
@@ -20,7 +20,7 @@ as completed a wide variety of tasks.  Yet, right now there is no tool that can 
 Todo.txt file and determine how the time of an individual or a team was spent. You and your team members will implement
 a complete tool for the automated analysis of Todo.txt files.  For instance, your tool should be able to determine how
 many high-priority tasks you recently completed.  In addition, your tool should be able to ascertain how many tasks were
-completed in the different contexts and projects represented in a certain Todo.txt file. 
+completed in the different contexts and projects represented in a certain Todo.txt file.
 
 As you specify, design, implement, test, debug, demonstrate, and release your Todo.txt analysis system, you and your
 team members will develop your knowledge and skills in computer science as you learn more about advanced command-line
@@ -59,12 +59,12 @@ in the {\tt args[]} array that is a parameter to the {\tt main} method.  However
 our class and laboratory sessions handled the command-line arguments in a brittle fashion: they required the
 command-line arguments to appear in a fixed order and they did not allow for the specification of arguments in a fashion
 similar to that used by most programs run in the Linux terminal window. Thankfully, there is a third-party Java library,
-called JCommander, that makes it easier to perform advanced argument management. 
+called JCommander, that makes it easier to perform advanced argument management.
 
 Since we want our Todo.txt analysis tool to have a full-featured and easy-to-use command-line argument system, we will
 use JCommander for this final project.  You and your team members should learn how to use JCommander by visiting the
 following Web sites: \url{http://jcommander.org/} and \url{https://github.com/cbeust/jcommander/}. You can find a
-current version of the JCommander JAR file by running the {\tt git pull} command in the {\tt cs112S2014-share/}
+current version of the JCommander JAR file by running the ``{\tt git pull}'' command in the {\tt cs112S2015-share/}
 repository.  After studying JCommander's user documentation, discussing the library with your team members, and
 resolving any questions by talking with the course instructor, your team should consider trying a simple example with
 JCommander. Can you display a help menu and recognize the arguments?
@@ -119,14 +119,14 @@ JCommander. Can you display a help menu and recognize the arguments?
 
  To complete this final project, your team should evenly divide the work between its members.  In order to support
  collaboration with your team, please create a version control repository that is named according to the convention {\tt
- cs112S2014-<your team number>} and share this repository with each other and the course instructor. By the start of the
+ cs112S2015-<your team number>} and share this repository with each other and the course instructor. By the start of the
  last laboratory session on April 29, 2014 you and your team should be prepared to give a full-featured, public
  demonstration of the current version of your system. Finally, you must finish and release your Todo.txt analyzer and
  submit signed and printed versions of the following deliverables no later than 5 pm on May 6, 2014.
 
-  
+
   \vspace*{-.05in}
- \begin{enumerate} 
+ \begin{enumerate}
   \itemsep0pt
 
   \item The Todo.txt file(s) that your team members used to manage the completion of this project
@@ -137,14 +137,14 @@ JCommander. Can you display a help menu and recognize the arguments?
 
   \item A written explanation of how your program uses scanning, parsing, and hashtables
 
-  \item The output from five separate runs of your final system, demonstrating it's correctness 
+  \item The output from five separate runs of your final system, demonstrating it's correctness
 
-  \item A justified statement of the worst-case time complexity for at least two methods 
+  \item A justified statement of the worst-case time complexity for at least two methods
 
-  \item A privately submitted review of each member of your team, documenting all contributions 
+  \item A privately submitted review of each member of your team, documenting all contributions
 
-  \item A personal commentary on the challenges that you faced when completing this assignment 
-   
+  \item A personal commentary on the challenges that you faced when completing this assignment
+
   \end{enumerate}
   \vspace*{-.05in}
 
