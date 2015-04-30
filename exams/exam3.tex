@@ -284,9 +284,8 @@ compiler.  Provide a justification for your response.
   \item What kind of sorting algorithm does the {\tt sort} method
     implement?
 
-  \item \begin{sloppypar} What would happen if we replaced {\tt
-      main}'s call to {\tt print(data)} with {\tt
-      System.out.println(data)}? \end{sloppypar}
+  \item \begin{sloppypar} What would happen if we replaced {\tt main}'s call to ``{\tt print(data)}'' with ``{\tt
+  System.out.println(data)}'' instead?\end{sloppypar}
 
   \end{enumerate}
 
@@ -303,7 +302,14 @@ compiler.  Provide a justification for your response.
 %   defines the complexity class $O(f(n))$ for the function $g(n) =
 %   2^{100}$ and $g(n) \in O(f(n))$.
 
-\item ({\bf 2 Points}) Clearly explain the function $f(n)$ that
+\item ({\bf 2 Points}) It is possible to conduct a ``doubling experiment'' to gauge the worst-case time complexity of an
+algorithm. What is the complexity class (i.e., using the ``big-Oh'' notation) for the following results from a doubling
+experiment?
+
+\begin{enumerate}
+    \item The algorithm's performance roughly doubles each time the problem \mbox{size doubles}.
+    \item The algorithm's performance increases fourfold each time the problem \mbox{size doubles}.
+\end{enumerate}
 
 \end{enumerate}
 
