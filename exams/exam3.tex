@@ -1,4 +1,4 @@
-%\documentstyle[bookman,epsf,psfig]{article}             
+%\documentstyle[bookman,epsf,psfig]{article}
 
 \documentclass[12pt]{article}
 
@@ -14,8 +14,8 @@
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}
 
-% define widow protection 
-        
+% define widow protection
+
 \def\widow#1{\vskip #1\vbadness10000\penalty-200\vskip-#1}
 
 % define a little section heading that doesn't go with any number
@@ -37,7 +37,7 @@
 \hbox to \hsize
 {\vrule\hskip 3pt\vrule\hfil\hbox to \tmpdim{\vbox{\hsize=\tmpdim
 \def\par{\leavevmode\endgraf}
-\obeyspaces \obeylines 
+\obeyspaces \obeylines
 \let\par=\endgraf
 \bf #1}}}}}
 
@@ -78,7 +78,7 @@ status updates.
 \newpage
 
 \begin{enumerate}
-  
+
 \item ({\bf 10 Points}) Answer the following questions about the basic characteristics of the Java programming language.
   For Question~\ref{encaps_example}, refer to the source code listing for {\tt BankAccount.java} that is in
   Figure~\ref{BankAccount}. For Question~\ref{values_refs}, please see the source code listing for {\tt
@@ -90,7 +90,7 @@ status updates.
 % please ensure that your response states how the Java programming language provides these features.
 
 \item ({\bf 2 Points}) The Java language provides a class called the {\tt java.util.Scanner}.  What is the name and
-  purpose of two methods that are provided by the {\tt Scanner}? 
+  purpose of two methods that are provided by the {\tt Scanner}?
 
 % \item \label{ctor_example} ({\bf 2 Points}) Please explain the similarities and differences between {\em instance}
 %   variables and {\em static} variables.  Also, you should discuss the similarities and differences between {\em static}
@@ -109,13 +109,13 @@ compiler.  Provide a justification for your response.
 \begin{enumerate}
 
 \item {\tt BankAccount account1;}\\
-  {\tt account1.deposit(1500);} 
+  {\tt account1.deposit(1500);}
 
 \item {\tt BankAccount account3 = new BankAccount();} \\
   {\tt account3.deposit(1200);} \\
   {\tt account3.deposit(account3.getBalance());}
 
-\end{enumerate} 
+\end{enumerate}
 
 \item \label{values_refs} ({\bf 4 Points}) The Java programming
   language includes primitive data types like {\tt double} and objects
@@ -147,13 +147,13 @@ compiler.  Provide a justification for your response.
         int b = 20;
         int c = TRUE;
         int d = TRUE;
-        
+
         a = a + b;
         b = a - b;
         a = a - b;
         c = a % 2;
         d = b % 3;
-        
+
         System.out.println(" a = "  + a + " , b = "  + b);
         System.out.println(" c = "  + c + " , d = "  + d);
 \end{verbatim}
@@ -189,7 +189,7 @@ compiler.  Provide a justification for your response.
 %%   their implementation in any programming language.
 
 %% \begin{enumerate}
-  
+
 %% \item ({\bf 3 Points}) Suppose that you were asked to write a {\tt
 %%   HaltingDetector} program that takes as input the source code of a
 %%   Java program $P$ and an input $I$ and returns either {\tt true} or
@@ -199,7 +199,7 @@ compiler.  Provide a justification for your response.
 %%   not halt on $I$. Explain whether or not it is possible to write the
 %%   {\tt HaltingDetector} program.  Make sure that you clearly justify
 %%   your response.
-  
+
 %% \item ({\bf 2 Points}) Suppose that you are asked to create an
 %%   algorithm that will list all of the real numbers between $0.0$ and
 %%   $1.0$.  Is it possible to write a pseudo-code description of an
@@ -213,7 +213,7 @@ compiler.  Provide a justification for your response.
 %% (iii) quadratic, and (iv) exponential functions.  Your response can
 %% use function $f_{i}(n)$ as the linear function, and so on for the
 %% other functions.
-  
+
 %% \item ({\bf 3 Points}) Lothar Collatz proposed an interesting sequence
 %%   of numbers that can be generated with the below steps.  State
 %%   whether or not the steps that are listed below would be considered
@@ -223,16 +223,16 @@ compiler.  Provide a justification for your response.
 
 %% \begin{enumerate}
 
-%% \item  Choose an arbitrary positive integer $A$ as the first item in the 
+%% \item  Choose an arbitrary positive integer $A$ as the first item in the
 %%         sequence. \label{step1}
 
 %% \item  If $A = 1$ then stop. \label{step2}
 
-%% \item  If $A$ is even, then replace $A$ by $A / 2$ and go to Step ii. 
+%% \item  If $A$ is even, then replace $A$ by $A / 2$ and go to Step ii.
 %%         \label{step3}
- 
-%% \item  If $A$ is odd, then replace $A$ by $(3 \times A) + 1$ and go to 
-%%         Step ii. 
+
+%% \item  If $A$ is odd, then replace $A$ by $(3 \times A) + 1$ and go to
+%%         Step ii.
 %%         \label{step4}
 
 %% \end{enumerate}
@@ -247,7 +247,7 @@ compiler.  Provide a justification for your response.
   questions about the analysis of an algorithm's time efficiency.
 
 \begin{enumerate}
-  
+
 \item ({\bf 3 Points}) Goodrich and Tamassia acknowledge that
   empirical studies of running times are quite useful.  However, these
   authors indicate that there are three major limitations to this type
@@ -259,7 +259,7 @@ compiler.  Provide a justification for your response.
 %%   Two.''  Please describe the experiments that you would conduct to
 %%   measure the time overhead associated with the execution of the {\tt
 %%   put(k,v)} and {\tt get(k)} algorithms in both of the possible
-%%   configurations.  How would you determine which configuration 
+%%   configurations.  How would you determine which configuration
 %%   was better using the data produced by your experiment?
 
 %% \item ({\bf 5 Points}) Draw a graph that illustrates the ``big-Oh''
@@ -289,7 +289,7 @@ compiler.  Provide a justification for your response.
       System.out.println(data)}? \end{sloppypar}
 
   \end{enumerate}
-  
+
 %% \item ({\bf 3 Points}) Complexity classes can be viewed as sets that
 %%   have functions as their members.  Your answer to this question must
 %%   provide three separate Venn diagrams, (i) through (iii).  Each Venn
@@ -299,16 +299,18 @@ compiler.  Provide a justification for your response.
 %%   \cap \Omega(n^2)$.  Thus, the Venn diagram in (iii) should utilize
 %%   the sets that you defined in (i) and (ii).
 
+% \item ({\bf 2 Points}) Clearly explain the function $f(n)$ that
+%   defines the complexity class $O(f(n))$ for the function $g(n) =
+%   2^{100}$ and $g(n) \in O(f(n))$.
+
 \item ({\bf 2 Points}) Clearly explain the function $f(n)$ that
-  defines the complexity class $O(f(n))$ for the function $g(n) =
-  2^{100}$ and $g(n) \in O(f(n))$.
-  
+
 \end{enumerate}
 
 \newpage
 
 \item ({\bf 10 Points}) The Java programming language provides recursion
-  as a construct to elegantly implement certain algorithms.  Answer the 
+  as a construct to elegantly implement certain algorithms.  Answer the
   following questions about recursion.
 
 \begin{enumerate}
@@ -322,7 +324,7 @@ compiler.  Provide a justification for your response.
   response can assume that the {\tt factorial(4)} call occurs inside
   of the {\tt main(String args[])} method.
 
-{\small 
+{\small
 \begin{verbatim}
 // pre: n is greater than or equal to zero
 public static int factorial(int n)
@@ -334,7 +336,7 @@ public static int factorial(int n)
      int result = n * factorial(n - 1);
      return result;
   }
-} 
+}
 \end{verbatim}
 }
 
@@ -363,14 +365,14 @@ public static int factorial(int n)
   about the implementation and use of {\tt Queue}s.
 
   \begin{enumerate}
-    
+
   \item ({\bf 4 Points}) What is the worst-case space complexity of an
     instance of {\tt ArrayQueue}?  What is the worst-case space
     complexity of an instance of the {\tt NodeQueue}?  Your response
     should clearly state {\em why} your selected space complexities
     are correct and explain the trade-offs associated with the {\tt
       ArrayQueue} and {\tt NodeQueue}.
-    
+
   %% \item ({\bf 4 Points}) Suppose that you were asked to implement a
   %%   {\tt Queue} with an array {\tt Q[]} of size $N$.  For this
   %%   question, you must implement the {\tt Queue} so that {\tt Q[0]} is
@@ -391,9 +393,9 @@ public static int factorial(int n)
     in which they are listed below.  \\
 
     \begin{verbatim}
-      1. enqueue(5), 2. enqueue(3),  3. dequeue(),   4. enqueue(7), 
-      5. dequeue(),  6. front(),     7. dequeue(),   8. dequeue(), 
-      9. isEmpty(),  10. enqueue(9), 11. enqueue(7), 
+      1. enqueue(5), 2. enqueue(3),  3. dequeue(),   4. enqueue(7),
+      5. dequeue(),  6. front(),     7. dequeue(),   8. dequeue(),
+      9. isEmpty(),  10. enqueue(9), 11. enqueue(7),
       12. size(),    13. enqueue(3), 14. enqueue(5), 15. dequeue()
     \end{verbatim}
 
@@ -416,13 +418,13 @@ public static int factorial(int n)
 %%   \item ({\bf 3 Points}) A {\tt String} of parentheses is balanced if there
 %%       is a matching ``{\tt )}`` for every ``{\tt (}``.  In a Java program, it
 %%       is important to ensure that all of the parentheses match or the program
-%%       will not compile.  Using a {\tt Stack} ADT, write the Java-based 
+%%       will not compile.  Using a {\tt Stack} ADT, write the Java-based
 %%       pseudo code for the method {\tt isMatchingParentheses(String s)} that
-%%       returns {\tt true} when the {\tt String} contains a listing of 
-%%       matching parentheses and {\tt false} otherwise.  For simplicity, 
-%%       you can assume that every input {\tt s} is some arbitrary listing of 
-%%       parentheses that might or might not be balanced.  As an example, 
-%%       ``{\tt (())}'' is a matching {\tt String} of parentheses and 
+%%       returns {\tt true} when the {\tt String} contains a listing of
+%%       matching parentheses and {\tt false} otherwise.  For simplicity,
+%%       you can assume that every input {\tt s} is some arbitrary listing of
+%%       parentheses that might or might not be balanced.  As an example,
+%%       ``{\tt (())}'' is a matching {\tt String} of parentheses and
 %%       ``{\tt ((())))}'' is not.
 
 %% \item ({\bf 3 Points}) Draw a table that has three columns.  Label the
@@ -434,11 +436,11 @@ public static int factorial(int n)
 %%   where the top of the stack is in your column that describes the
 %%   state of the {\tt Stack}.
 
-%%   \begin{verbatim} 
-%%     1. push(5),    2. push(3), 
+%%   \begin{verbatim}
+%%     1. push(5),    2. push(3),
 %%     3. pop(),      4. push(7),
-%%     5. pop(),      6. top(), 
-%%     7. pop(),      8. pop() 
+%%     5. pop(),      6. top(),
+%%     7. pop(),      8. pop()
 %%   \end{verbatim}
 
   \item ({\bf 3 Points}) Provide a Java-based pseudo-code implementation (or, just plain pseudo-code implementation) of
@@ -454,7 +456,7 @@ public static int factorial(int n)
     \item ({\bf 5 Points}) The {\tt Stack} abstract data type can be used to determine whether or not an input {\tt
         String} of parentheses, or any other delimiting character, is either matching (e.g., ``(())'') or non-matching
       (e.g., ``((()))))'').  Using pseudo-code or Java code, please implement the {\tt isMatching\-(String s)} algorithm
-      that uses a {\tt Stack} to return {\tt true} when {\tt s} is matching and {\tt false} otherwise.  
+      that uses a {\tt Stack} to return {\tt true} when {\tt s} is matching and {\tt false} otherwise.
 
   \end{enumerate}
 
@@ -539,8 +541,8 @@ public static int factorial(int n)
 
 %% \item ({\bf 4 Points}) Completely describe the operation of the {\tt
 %% addFirst}, {\tt addLast}, {\tt removeFirst}, and {\tt removeLast}
-%% operations for a {\tt DoubleEndedQueue} that is implemented with a 
-%% doubly linked list.  Your response should explain when (and if!) any 
+%% operations for a {\tt DoubleEndedQueue} that is implemented with a
+%% doubly linked list.  Your response should explain when (and if!) any
 %% of these methods could throw an exception.
 
 %%   \item \begin{sloppypar} ({\bf 5 Points}) The {\tt java.util.Vector}
@@ -549,7 +551,7 @@ public static int factorial(int n)
 %%     Explain the purpose of each parameter and discuss how it will
 %%     impact the performance of the {\tt Vector} abstract data type.
 %%     How would you conduct an experiment to quantify the influence that
-%%     these two parameters have on the performance of the {\tt Vector}? 
+%%     these two parameters have on the performance of the {\tt Vector}?
 %% \end{sloppypar}
 
 
@@ -587,7 +589,7 @@ public static int factorial(int n)
 % \item ({\bf 3 Points}) Figure~\ref{tree} furnishes an example of an
 %   instance of the {\tt Tree} abstract data type.  Please provide the
 %   {\em parenthetic representation} of this tree.
-% 
+%
 \end{enumerate}
 
 \newpage
@@ -610,11 +612,11 @@ public static int factorial(int n)
   where the top of the stack is in your column that describes the
   state of the {\tt Stack}.
 
-  \begin{verbatim} 
-    1. push(15),    2. push(32), 
+  \begin{verbatim}
+    1. push(15),    2. push(32),
     3. pop(),       4. push(79),
-    5. pop(),       6. top(), 
-    7. pop(),       8. pop() 
+    5. pop(),       6. top(),
+    7. pop(),       8. pop()
   \end{verbatim}
 
 %% \item ({\bf 2 Points}) The time complexity of the {\tt LinkedList}'s
@@ -723,12 +725,12 @@ public static int factorial(int n)
 
 %%   \item \begin{verbatim}
 %%   otherExampleStrings = c("examples", "example", "examination")
-%%   getLongestCommonSubstring(otherExampleStrings)   
+%%   getLongestCommonSubstring(otherExampleStrings)
 %%   \end{verbatim}
 
 %%   \item \begin{verbatim}
 %%   otherWikipediaExample = c("BABA", "ABBA")
-%%   getLongestCommonSubstring(otherWikipediaExample) 
+%%   getLongestCommonSubstring(otherWikipediaExample)
 %%   \end{verbatim}
 
 %%   \end{enumerate}
@@ -770,43 +772,43 @@ public static int factorial(int n)
 \footnotesize{
 \begin{verbatim}
 public class BankAccount
-{  
+{
 
-  private double balance; 
+  private double balance;
 
   public BankAccount()
-  { 
+  {
 
     balance = 0;
-   
+
   }
 
   public BankAccount(double initialBalance)
-  {  
-    
-    balance = initialBalance;
-  
-  }
- 
-  public void deposit(double amount) 
-  { 
-    
-    balance = balance + amount;
-   
-  }
-  
-  public void withdraw(double amount) 
-  {  
-    
-    balance = balance - amount;
-   
-  }
-  
-  public double getBalance()
-  { 
+  {
 
-    return balance; 
-   
+    balance = initialBalance;
+
+  }
+
+  public void deposit(double amount)
+  {
+
+    balance = balance + amount;
+
+  }
+
+  public void withdraw(double amount)
+  {
+
+    balance = balance - amount;
+
+  }
+
+  public double getBalance()
+  {
+
+    return balance;
+
   }
 
 }
@@ -822,7 +824,7 @@ public class BankAccount
 \begin{verbatim}
 public class ValuesAndReferences
 {
-  
+
   public static void main(String[] args)
   {
 
@@ -833,7 +835,7 @@ public class ValuesAndReferences
     BankAccount account1 = new BankAccount(1000);
     BankAccount account2 = account1;
     account2.deposit(500);
-    
+
     BankAccount account3 = new BankAccount(1000);
     BankAccount account4 = new BankAccount(account3.getBalance());
     account4.deposit(500);
@@ -913,18 +915,18 @@ public class SortingExample
 \end{figure}
 
 % \newpage
-% 
+%
 % \begin{figure}[h]
-% 
+%
 %   \begin{center}
 %   \includegraphics[totalheight=0.75\textheight]{filesystem-tree.pdf}
 %   \end{center}
-% 
+%
 %   \vspace*{-.2in}
-% 
+%
 %   \caption{An Example of a Tree Data Structure.}
 %   \label{tree}
-% 
+%
 % \end{figure}
 
 \newpage
