@@ -654,10 +654,34 @@ questions about these ``linear'' data structures.
 
 \newpage
 
-\item ({\bf 10 Points}) 
+\item ({\bf 10 Points}) A map can efficiently store and retrieve values based on a uniquely identifying search key for
+each value. Answer the following questions about maps.
 
 \begin{enumerate}
-    \item ({\bf 2 Points})
+
+    \item ({\bf 2 Points}) Generally, a {\tt Map<K, V>} implements methods such as {\tt get(K k)} and {\tt put(K k, V
+    v)}. What is the purpose of these two methods?
+
+    \item ({\bf 5 Points}) It is possible to use a {\tt HashMap} to implement a {\tt WordCount} program. Answer the
+    following questions about the implementation of {\tt WordCount}.
+
+    \begin{enumerate}
+      \item How should the {\tt WordCount} program store key value pairs inside of the {\tt HashMap}?
+      \item What should {\tt WordCount} do when it finds a not-yet-encountered word?
+      \item How can the {\tt WordCount} program determine that it has already seen a word?
+      \item How should {\tt WordCount} determine a text's word that is used most frequently?
+      \item What is the worst-case time complexity of the operation from part iv?
+    \end{enumerate}
+
+    \item ({\bf 3 Points}) Implementing a {\tt HashMap} requires you to make several important decisions. Answer the
+    following questions about the map data structure.
+
+    \begin{enumerate}
+        \item What are the inputs and outputs to the hashing function used in the {\tt HashMap}?
+        \item What are the inputs and outputs of the {\tt hashCode} used by the {\tt HashMap}?
+        \item What is the purpose of the {\tt compressionFunction} used by the {\tt HashMap}?
+    \end{enumerate}
+
 \end{enumerate}
 
 %% \item ({\bf 10 Points}) The {\tt Tree} is an important and interesting
