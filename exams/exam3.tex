@@ -558,51 +558,28 @@ the following questions about the {\tt Stack} ADT.
 
 % \newpage
 
-\item ({\bf 10 Points}) Goodrich and Tamassia claim that the {\tt
-  Stack} ADT is the ``simplest of all data structures.''  The {\tt
-  LinkedList} is also a valuable data structure because it provides
-  additional functionality and flexibility not offered by the {\tt
-    Stack}.  Answer the following questions about the methods provided
-  by the {\tt Stack} and the {\tt LinkedList}.
+\item ({\bf 10 Points}) Goodrich and Tamassia introduce several extendable data structures that store data in a linear
+fashion, such as the {\tt Queue}, {\tt DoubleEndedQueue}, {\tt LinkedList}, and {\tt Vector}. Answer the following
+questions about these ``linear'' data structures.
 
 \begin{enumerate}
 
-% \item ({\bf 5 Points}) Draw a table that has three columns.  Label the
-%   first column ``Operation,'' the second column ``Output,'' and the
-%   third column ``Stack Contents.''  Populate the second and third
-%   columns with the output and {\tt Stack} state, respectively, that
-%   are created by the following sequence of operations.  You can place
-%   one operation on a single row.  Make sure that you clearly indicate
-%   where the top of the stack is in your column that describes the
-%   state of the {\tt Stack}.
-
-  % \begin{verbatim}
-  %   1. push(15),    2. push(32),
-  %   3. pop(),       4. push(79),
-  %   5. pop(),       6. top(),
-  %   7. pop(),       8. pop()
-  % \end{verbatim}
-
-%% \item ({\bf 2 Points}) The time complexity of the {\tt LinkedList}'s
-%%   {\em get(i)} method is given as $O(min(i+1, n-i))$.  Clearly explain
-%%   the meaning of this time complexity.  Finally, please identify the
-%%   worst-case input parameter for the {\em get} method.  Your response
-%%   should include a graphical depiction of an instance of the {\tt
-%%     LinkedList} class.
-
-  \item ({\bf 2 Points}) What are the similarities and differences between a {\tt Queue} and a {\tt DoubleEndedQueue}?
+    \item ({\bf 2 Points}) What are the similarities and differences between a {\tt Queue} and a {\tt DoubleEndedQueue}?
     Your response to this question should explain and compare and constrast the key methods provided by each of these
     data structures.
 
-% \item ({\bf 3 Points}) Explain which methods of the array-based {\tt Stack} abstract data type can throw the {\tt
-%     EmptyStackException} and the {\tt FullStackExeption}.  Your response to this question should discuss why your
-%   selected methods can throw these exceptions; please also include a graphical depiction of a {\tt Stack} for each
-%   circumstance in which an exception can be thrown.
-
-\item ({\bf 2 Points}) Suppose that an instance of {\tt java.util.LinkedList} contains a collection of several {\tt
+    \item ({\bf 2 Points}) Suppose that an instance of {\tt java.util.LinkedList} contains a collection of several {\tt
     Integer} objects.  Using natural language, please describe an algorithm that can find the largest {\tt Integer}
-  inside of the {\tt LinkedList}.  What is the worst-case time complexity of your implementation?  Your response should
-  also furnish a diagram that helps to explain how the algorithm works.
+    inside of the {\tt LinkedList}.  What is the worst-case time complexity of your implementation?  Your response should
+    also furnish a diagram that helps to explain how the algorithm works.
+
+    \item ({\bf 2 Points}) Suppose that you have correctly implemented an extendable array using a fixed-size
+    ``backing'' array. What is the worst-case time complexity of the {\tt get(i)} and {\tt set(i,e)} methods? Why did
+    you pick these time complexities?
+
+    \item ({\bf 4 Points}) The {\tt java.util.Vector} has a constructor that accepts two parameters in this manner: {\tt
+    Vector(int initialCapacity, int capacityIncrement)}.  Explain the purpose of each of these parameters and discuss how
+    it will impact the performance of the {\tt Vector} abstract data type.
 
 \end{enumerate}
 
