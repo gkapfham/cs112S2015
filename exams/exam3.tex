@@ -285,7 +285,7 @@ SortingExample} class of Figure~\ref{SortingExample}.
     \item \begin{sloppypar}
       What would happen if we replaced the {\tt main} method's call to ``{\tt print(data)}'' with
       ``{\tt System.out.println(data)}'' instead?
-    \end{sloppypar} 
+    \end{sloppypar}
 
   \end{enumerate}
 
@@ -365,12 +365,6 @@ public static int factorial(int n)
   }
 \end{verbatim}}
 
-%% \item ({\bf 2 Points}) The Java programming language directly supports
-%%   the implementation of recursive methods.  Please clearly explain how
-%%   the Java virtual machine (JVM) supports recursion.  Your response
-%%   should include a discussion of {\em which} abstract data type (ADT)
-%%   supports recursion and {\em how} the JVM uses this ADT.
-
 \end{enumerate}
 
 \newpage
@@ -388,16 +382,6 @@ public static int factorial(int n)
     are correct and explain the trade-offs associated with the {\tt
       ArrayQueue} and {\tt NodeQueue}.
 
-  %% \item ({\bf 4 Points}) Suppose that you were asked to implement a
-  %%   {\tt Queue} with an array {\tt Q[]} of size $N$.  For this
-  %%   question, you must implement the {\tt Queue} so that {\tt Q[0]} is
-  %%   always the front of the {\tt Queue} and the {\tt Queue} ``grows''
-  %%   toward {\tt Q[N-1]} when the {\tt enqueue} operation is executed.
-  %%   Clearly describe the weakness(es) associated with this array-based
-  %%   implementation of a {\tt Queue}.  If there are no weaknesses
-  %%   associated with this implementation, then please state this and
-  %%   justify your statement.
-
   \item ({\bf 6 Points}) Draw a table that has three columns.  Label
     the first column ``Operation,'' the second column ``Output,'' and
     the third column ``front $\leftarrow Q \leftarrow$ rear.''
@@ -405,7 +389,7 @@ public static int factorial(int n)
     Queue} state, respectively, that are created by the following
     sequence of operations.  You can place one operation on a single
     row. Please make sure that you execute the operations in the order
-    in which they are listed below.  \\
+    in which they are listed below.
 
     \begin{verbatim}
       1. enqueue(5), 2. enqueue(3),  3. dequeue(),   4. enqueue(7),
@@ -414,49 +398,14 @@ public static int factorial(int n)
       12. size(),    13. enqueue(3), 14. enqueue(5), 15. dequeue()
     \end{verbatim}
 
-%%   \item ({\bf 2 Points}) Assume that an {\tt ArrayQueue} is
-%%     implemented in a fashion that uses the modulo operator to create a
-%%     circular array.  Provide the Java-based pseudo code (or, just
-%%     plain pseudo code) that explains the implementation of {\em
-%%     either} the {\tt dequeue()} or the {\tt enqueue(Object e)} method.
-
 \end{enumerate}
 
 \newpage
 
-\item ({\bf 10 Points}) The {\tt Stack} is an ADT that adheres to the
-  ``last in first out'' (LIFO) discipline.  Answer the following
-  questions about the {\tt Stack} ADT.
+\item ({\bf 10 Points}) The {\tt Stack} is an ADT that adheres to the ``last in first out'' (LIFO) discipline.  Answer
+the following questions about the {\tt Stack} ADT.
 
   \begin{enumerate}
-
-%%   \item ({\bf 3 Points}) A {\tt String} of parentheses is balanced if there
-%%       is a matching ``{\tt )}`` for every ``{\tt (}``.  In a Java program, it
-%%       is important to ensure that all of the parentheses match or the program
-%%       will not compile.  Using a {\tt Stack} ADT, write the Java-based
-%%       pseudo code for the method {\tt isMatchingParentheses(String s)} that
-%%       returns {\tt true} when the {\tt String} contains a listing of
-%%       matching parentheses and {\tt false} otherwise.  For simplicity,
-%%       you can assume that every input {\tt s} is some arbitrary listing of
-%%       parentheses that might or might not be balanced.  As an example,
-%%       ``{\tt (())}'' is a matching {\tt String} of parentheses and
-%%       ``{\tt ((())))}'' is not.
-
-%% \item ({\bf 3 Points}) Draw a table that has three columns.  Label the
-%%   first column ``Operation,'' the second column ``Output,'' and the
-%%   third column ``{\tt Stack} Contents.''  Populate the second and third
-%%   columns with the output and {\tt Stack} state, respectively, that
-%%   are created by the following sequence of operations.  You can place
-%%   one operation on a single row.  Make sure that you clearly indicate
-%%   where the top of the stack is in your column that describes the
-%%   state of the {\tt Stack}.
-
-%%   \begin{verbatim}
-%%     1. push(5),    2. push(3),
-%%     3. pop(),      4. push(7),
-%%     5. pop(),      6. top(),
-%%     7. pop(),      8. pop()
-%%   \end{verbatim}
 
   \item ({\bf 3 Points}) Provide a Java-based pseudo-code implementation (or, just plain pseudo-code implementation) of
     either the {\tt push} or {\tt pop} method for a simple array-based implementation of the {\tt Stack}.  You can assume
