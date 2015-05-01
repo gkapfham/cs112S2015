@@ -267,9 +267,8 @@ weaknesses?
 %%   on the vertical axis.  Why do we use the ``big-Oh'' notation to
 %%   describe the performance of an algorithm?
 
-\item ({\bf 5 Points}) Please answer the following questions about the
-  three methods in the {\tt SortingExample} class of
-  Figure~\ref{SortingExample}.
+\item ({\bf 5 Points}) Please answer the following questions about the three methods provided by the {\tt
+SortingExample} class of Figure~\ref{SortingExample}.
 
   \begin{enumerate}
 
@@ -283,8 +282,10 @@ weaknesses?
   \item What kind of sorting algorithm does the {\tt sort} method
     implement?
 
-  \item \begin{sloppypar} What would happen if we replaced {\tt main}'s call to ``{\tt print(data)}'' with ``{\tt
-  System.out.println(data)}'' instead?\end{sloppypar}
+    \item \begin{sloppypar}
+      What would happen if we replaced the {\tt main} method's call to ``{\tt print(data)}'' with
+      ``{\tt System.out.println(data)}'' instead?
+    \end{sloppypar} 
 
   \end{enumerate}
 
@@ -345,15 +346,24 @@ public static int factorial(int n)
 \end{verbatim}
 }
 
-%% \item ({\bf 2 Points}) Discuss the similarities and differences
-%%   between {\em instance} variables and {\em static} variables.  Also,
-%%   please explain the similarities and differences between the keywords
-%%   {\tt private} and {\tt protected}.
-
-\item ({\bf 5 Points}) A Java virtual machine (JVM) is a complex software artifact.  Using both natural language
+\item ({\bf 3 Points}) A Java virtual machine (JVM) is a complex software artifact.  Using both natural language
   sentences and a diagram with labels, describe the components within a JVM.  Your response should explain how these
   different components execute a Java program.  Please make sure that you clearly discuss how the JVM handles the
   execution of programs that make recursive method calls.
+
+  \item ({\bf 2 Points}) The \texttt{fibonacci} method below takes an input variable $n$ and returns the $n^{th}$
+  Fibonacci number based on the equation $F_n = F_{n-2} + F_{n-1}$. Is this implementation efficient?  Please give
+  evidence to support your assertion.
+
+{\small \begin{verbatim}
+  public static long fibonacci(int n) {
+    if( n <= 1) {
+      return 0;
+    }
+    else
+      return fibonacci(n-2) + fibonacci(n-1);
+  }
+\end{verbatim}}
 
 %% \item ({\bf 2 Points}) The Java programming language directly supports
 %%   the implementation of recursive methods.  Please clearly explain how
